@@ -88,7 +88,7 @@ public class GameUI : MonoBehaviour
     private IEnumerator DisplayLoseMessage()
     {
         loseText.gameObject.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(10f);
         ResetScene();
     }
 
@@ -100,7 +100,7 @@ public class GameUI : MonoBehaviour
     private IEnumerator DisplayWinMessage()
     {
         winText.gameObject.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(10f);
         ResetScene();
     }
 }
